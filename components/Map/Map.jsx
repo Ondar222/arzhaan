@@ -1,6 +1,6 @@
-import { MapContainer, TileLayer, Marker, Popup, Polygon, Tooltip, GeoJSON } from 'react-leaflet'
+import { MapContainer, TileLayer, Marker, Popup, Polygon, Tooltip, GeoJSON} from 'react-leaflet'
 import data from  '@/data/water-polygon.json'
-
+import arzhaan from '@/data/arzhaan2.json'
 
 const Map = () => {
   return (
@@ -12,6 +12,12 @@ const Map = () => {
       {
         data.features.map((item) => <GeoJSON data={item}><Tooltip>{item.properties.NAME}</Tooltip></GeoJSON>)
       }
+
+      {
+        arzhaan.features.map((item) => <GeoJSON data={item}><Tooltip>{item.properties.NAME}</Tooltip></GeoJSON>)
+      }
+
+     
       <Marker position={[51.505, 94]}>
         <Popup>
           A pretty CSS3 popup. <br /> Easily customizable.
