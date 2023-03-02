@@ -865,16 +865,20 @@
         "coordinates": [
           [
             [
-              91.8687050581052,
-              51.36564491656406
+              91.85771872998016,
+              51.37552998166875
             ],
             [
-              91.86432769299292,
-              51.361507594967186
+              91.83617522717257,
+              51.358068496287004
             ],
             [
-              91.88724448681609,
-              51.35930445225368
+              91.89205100537073,
+              51.345545834886956
+            ],
+            [
+              91.91063334942598,
+              51.35691311582791
             ],
             [
               91.89351012707499,
@@ -885,8 +889,8 @@
               51.372360547711274
             ],
             [
-              91.8687050581052,
-              51.36564491656406
+              91.85771872998016,
+              51.37552998166875
             ]
           ]
         ]
@@ -1253,7 +1257,7 @@
         ]
       },
       "properties": {
-        "description": "Чойган-Холь",
+        "description": "Чойган",
         "fill": "#ed4543",
         "fill-opacity": 0.6,
         "stroke": "#ed4543",
@@ -1456,855 +1460,82 @@
       "type": "Feature",
       "id": 34,
       "geometry": {
-        "type": "Point",
+        "type": "Polygon",
         "coordinates": [
-          98.051849,
-          51.47229
+          [
+            [
+              94.77653399758195,
+              51.40284997916447
+            ],
+            [
+              94.77790728859758,
+              51.33773707913952
+            ],
+            [
+              94.79164019875381,
+              51.357302218501935
+            ],
+            [
+              94.79850665383198,
+              51.415947262465
+            ],
+            [
+              94.7741307383046,
+              51.442130516201935
+            ],
+            [
+              94.75868121437881,
+              51.434835059796896
+            ],
+            [
+              94.77653399758195,
+              51.40284997916447
+            ]
+          ]
         ]
       },
       "properties": {
-        "description": "Ключ, ручей; </br>\nРеспублика Тыва, Каа-Хемский кожуун, поселок Санаторий Уш-Бельдир (Северный Аржан)",
-        "iconCaption": "Источники Уш-Белдир",
-        "marker-color": "#1e98ff"
+        "description": "Чедер",
+        "fill": "#ed4543",
+        "fill-opacity": 0.6,
+        "stroke": "#ed4543",
+        "stroke-width": "5",
+        "stroke-opacity": 0.9
       }
     },
     {
       "type": "Feature",
       "id": 35,
       "geometry": {
-        "type": "Point",
+        "type": "Polygon",
         "coordinates": [
-          98.142246,
-          50.35804
+          [
+            [
+              92.26710035710285,
+              50.91766494570875
+            ],
+            [
+              92.25183284381707,
+              50.86390490965967
+            ],
+            [
+              92.26985728839716,
+              50.89572476501635
+            ],
+            [
+              92.26710035710285,
+              50.91766494570875
+            ]
+          ]
         ]
       },
       "properties": {
-        "description": "Ключ, ручей; </br>\nРеспублика Тыва, Тере-Хольский кожуун",
-        "iconCaption": "Источник Тарыс",
-        "marker-color": "#1e98ff"
-      }
-    },
-    {
-      "type": "Feature",
-      "id": 36,
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          98.518812,
-          52.743293
-        ]
-      },
-      "properties": {
-        "description": "Республика Тыва, Тоджинский кожуун, река Изиг-Суг",
-        "marker-color": "#1e98ff"
-      }
-    },
-    {
-      "type": "Feature",
-      "id": 37,
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          98.228495,
-          52.751121
-        ]
-      },
-      "properties": {
-        "description": "Республика Тыва, Тоджинский кожуун, озеро Чойган-Холь",
-        "marker-color": "#1e98ff"
-      }
-    },
-    {
-      "type": "Feature",
-      "id": 38,
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          89.918906,
-          50.995674
-        ]
-      },
-      "properties": {
-        "description": "Ключ, ручей; </br>\nРеспублика Тыва, Бай-Тайгинский кожуун",
-        "iconCaption": "Источник Шивилиг",
-        "marker-color": "#1e98ff"
-      }
-    },
-    {
-      "type": "Feature",
-      "id": 39,
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          90.189094,
-          51.018914
-        ]
-      },
-      "properties": {
-        "description": "Республика Тыва, Бай-Тайгинский кожуун, село Хемчик",
-        "marker-color": "#1e98ff"
-      }
-    },
-    {
-      "type": "Feature",
-      "id": 40,
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          90.189094,
-          51.018914
-        ]
-      },
-      "properties": {
-        "description": "Республика Тыва, Бай-Тайгинский кожуун, село Хемчик",
-        "marker-color": "#1e98ff"
-      }
-    },
-    {
-      "type": "Feature",
-      "id": 41,
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          92.103314,
-          51.769463
-        ]
-      },
-      "properties": {
-        "description": "Ключ, ручей; </br>\nРеспублика Тыва, Чаа-Хольский кожуун",
-        "iconCaption": "минеральный источник Ажыг-Суг",
-        "marker-color": "#1e98ff"
-      }
-    },
-    {
-      "type": "Feature",
-      "id": 42,
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          90.107994,
-          51.040598
-        ]
-      },
-      "properties": {
-        "description": "Дом отдыха; </br>\nРеспублика Тыва, Бай-Тайгинский кожуун, село Кызыл-Даг",
-        "iconCaption": "Туристическая база Аржаан Бел",
-        "marker-color": "#1e98ff"
-      }
-    },
-    {
-      "type": "Feature",
-      "id": 43,
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          94.371284,
-          51.164314
-        ]
-      },
-      "properties": {
-        "description": "Турбаза; </br>\nРеспублика Тыва, Тандинский кожуун",
-        "iconCaption": "Турбаза Арголик",
-        "marker-color": "#1e98ff"
-      }
-    },
-    {
-      "type": "Feature",
-      "id": 44,
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          90.107994,
-          51.040598
-        ]
-      },
-      "properties": {
-        "description": "Общеобразовательная школа; </br>\nРеспублика Тыва, Бай-Тайгинский кожуун, село Кызыл-Даг",
-        "iconCaption": "Бай-Тайгинский Кожуун Республики Тыва",
-        "marker-color": "#1e98ff"
-      }
-    },
-    {
-      "type": "Feature",
-      "id": 45,
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          91.542407,
-          50.692665
-        ]
-      },
-      "properties": {
-        "description": "Ключ, ручей; </br>\nРеспублика Тыва, Овюрский кожуун",
-        "iconCaption": "минеральный источник Ангырактыг",
-        "marker-color": "#1e98ff"
-      }
-    },
-    {
-      "type": "Feature",
-      "id": 46,
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          92.019592,
-          50.77434
-        ]
-      },
-      "properties": {
-        "description": "Ключ, ручей; </br>\nРеспублика Тыва, Овюрский кожуун",
-        "iconCaption": "минеральный источник Талдыг-Чарык",
-        "marker-color": "#1e98ff"
-      }
-    },
-    {
-      "type": "Feature",
-      "id": 47,
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          90.743177,
-          51.152344
-        ]
-      },
-      "properties": {
-        "description": "Ключ, ручей; </br>\nРеспублика Тыва, Барун-Хемчикский кожуун",
-        "iconCaption": "минеральный источник Суглуг-Ой",
-        "marker-color": "#1e98ff"
-      }
-    },
-    {
-      "type": "Feature",
-      "id": 48,
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          92.823924,
-          51.331982
-        ]
-      },
-      "properties": {
-        "description": "Республика Тыва, Улуг-Хемский кожуун, село Торгалыг",
-        "marker-color": "#1e98ff"
-      }
-    },
-    {
-      "type": "Feature",
-      "id": 49,
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          94.890951,
-          50.877721
-        ]
-      },
-      "properties": {
-        "description": "Ключ, ручей; </br>\nРеспублика Тыва, Тандинский кожуун",
-        "iconCaption": "минеральный источник Маннайлыг",
-        "marker-color": "#1e98ff"
-      }
-    },
-    {
-      "type": "Feature",
-      "id": 50,
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          93.033124,
-          51.565894
-        ]
-      },
-      "properties": {
-        "description": "Республика Тыва, Улуг-Хемский кожуун, гора Хайыракан",
-        "marker-color": "#1e98ff"
-      }
-    },
-    {
-      "type": "Feature",
-      "id": 51,
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          94.753156,
-          51.729504
-        ]
-      },
-      "properties": {
-        "description": "Ключ, ручей; </br>\nРеспублика Тыва, Каа-Хемский кожуун",
-        "iconCaption": "Минеральный источник Чурек-Доргун",
-        "marker-color": "#1e98ff"
-      }
-    },
-    {
-      "type": "Feature",
-      "id": 52,
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          91.228791,
-          51.471756
-        ]
-      },
-      "properties": {
-        "description": "Ключ, ручей; </br>\nРеспублика Тыва, Сут-Хольский кожуун",
-        "iconCaption": "минеральный источник Устуу-Доргун",
-        "marker-color": "#1e98ff"
-      }
-    },
-    {
-      "type": "Feature",
-      "id": 53,
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          98.051849,
-          51.47229
-        ]
-      },
-      "properties": {
-        "description": "Уш-Бельдир",
-        "iconCaption": "Источники Уш-Белдир",
-        "marker-color": "#1e98ff"
-      }
-    },
-    {
-      "type": "Feature",
-      "id": 54,
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          92.103314,
-          51.769463
-        ]
-      },
-      "properties": {
-        "description": "Ключ, ручей; </br>\nРеспублика Тыва, Чаа-Хольский кожуун",
-        "iconCaption": "минеральный источник Ажыг-Суг",
-        "marker-color": "#1e98ff"
-      }
-    },
-    {
-      "type": "Feature",
-      "id": 55,
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          93.178057,
-          51.026541
-        ]
-      },
-      "properties": {
-        "description": "Ключ, ручей; </br>\nРеспублика Тыва, Чеди-Хольский кожуун",
-        "iconCaption": "минеральный источник Хурегечи",
-        "marker-color": "#1e98ff"
-      }
-    },
-    {
-      "type": "Feature",
-      "id": 56,
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          93.033124,
-          51.565894
-        ]
-      },
-      "properties": {
-        "description": "Республика Тыва, Улуг-Хемский кожуун, гора Хайыракан",
-        "marker-color": "#1e98ff"
-      }
-    },
-    {
-      "type": "Feature",
-      "id": 57,
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          98.518812,
-          52.743293
-        ]
-      },
-      "properties": {
-        "description": "Республика Тыва, Тоджинский кожуун, река Изиг-Суг",
-        "marker-color": "#1e98ff"
-      }
-    },
-    {
-      "type": "Feature",
-      "id": 58,
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          98.518812,
-          52.743293
-        ]
-      },
-      "properties": {
-        "description": "Республика Тыва, Тоджинский кожуун, река Изиг-Суг",
-        "marker-color": "#1e98ff"
-      }
-    },
-    {
-      "type": "Feature",
-      "id": 59,
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          90.743177,
-          51.152344
-        ]
-      },
-      "properties": {
-        "description": "Ключ, ручей; </br>\nРеспублика Тыва, Барун-Хемчикский кожуун",
-        "iconCaption": "минеральный источник Суглуг-Ой",
-        "marker-color": "#1e98ff"
-      }
-    },
-    {
-      "type": "Feature",
-      "id": 60,
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          91.881408,
-          51.36543
-        ]
-      },
-      "properties": {
-        "description": "Ключ, ручей; </br>\nРеспублика Тыва, Дзун-Хемчикский кожуун",
-        "iconCaption": "минеральный источник Кегээн-Булак",
-        "marker-color": "#1e98ff"
-      }
-    },
-    {
-      "type": "Feature",
-      "id": 61,
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          96.114852,
-          52.464254
-        ]
-      },
-      "properties": {
-        "description": "Администрация; </br>\nОктябрьская ул., 20, село Тоора-Хем",
-        "iconCaption": "Администрация Тоджинского Кожууна Республики Тыва",
-        "marker-color": "#1e98ff"
-      }
-    },
-    {
-      "type": "Feature",
-      "id": 62,
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          89.84856,
-          50.060548
-        ]
-      },
-      "properties": {
-        "description": "Республика Тыва, Монгун-Тайгинский кожуун, река Моген-Бурен",
-        "marker-color": "#1e98ff"
-      }
-    },
-    {
-      "type": "Feature",
-      "id": 63,
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          89.873911,
-          50.048726
-        ]
-      },
-      "properties": {
-        "description": "Республика Тыва, Монгун-Тайгинский кожуун, село Кызыл-Хая",
-        "marker-color": "#1e98ff"
-      }
-    },
-    {
-      "type": "Feature",
-      "id": 64,
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          94.890984,
-          50.877727
-        ]
-      },
-      "properties": {
-        "description": "Республика Тыва, Тандинский кожуун, река Маннайлыг",
-        "marker-color": "#1e98ff"
-      }
-    },
-    {
-      "type": "Feature",
-      "id": 65,
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          95.299304,
-          50.73852
-        ]
-      },
-      "properties": {
-        "description": "Республика Тыва, Тес-Хемский кожуун, местечко Дуктуг-Дыт",
-        "marker-color": "#1e98ff"
-      }
-    },
-    {
-      "type": "Feature",
-      "id": 66,
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          91.881408,
-          51.36543
-        ]
-      },
-      "properties": {
-        "description": "Кегээн-Булак",
-        "iconCaption": "минеральный источник Кегээн-Булак",
-        "marker-color": "#1e98ff"
-      }
-    },
-    {
-      "type": "Feature",
-      "id": 67,
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          94.437936,
-          51.362895
-        ]
-      },
-      "properties": {
-        "description": "Республика Тыва, Тандинский кожуун, озеро Дус-Холь (Сватиково)",
-        "marker-color": "#1e98ff"
-      }
-    },
-    {
-      "type": "Feature",
-      "id": 68,
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          94.462737,
-          51.161468
-        ]
-      },
-      "properties": {
-        "description": "Администрация; </br>\nул. Данчай Оюна, 45, село Бай-Хаак",
-        "iconCaption": "Администрация Тандинского кожууна Республики Тыва",
-        "marker-color": "#1e98ff"
-      }
-    },
-    {
-      "type": "Feature",
-      "id": 69,
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          94.437936,
-          51.362895
-        ]
-      },
-      "properties": {
-        "description": "Республика Тыва, Тандинский кожуун, озеро Дус-Холь (Сватиково)",
-        "marker-color": "#1e98ff"
-      }
-    },
-    {
-      "type": "Feature",
-      "id": 70,
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          94.753156,
-          51.729504
-        ]
-      },
-      "properties": {
-        "description": "Ключ, ручей; </br>\nРеспублика Тыва, Каа-Хемский кожуун",
-        "iconCaption": "Минеральный источник Чурек-Доргун",
-        "marker-color": "#1e98ff"
-      }
-    },
-    {
-      "type": "Feature",
-      "id": 71,
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          94.310788,
-          51.692956
-        ]
-      },
-      "properties": {
-        "description": "Ключ, ручей; </br>\nРеспублика Тыва, городской округ Кызыл, местечко Кундустуг",
-        "iconCaption": "минеральный источник Кундустуг",
-        "marker-color": "#1e98ff"
-      }
-    },
-    {
-      "type": "Feature",
-      "id": 72,
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          98.142246,
-          50.35804
-        ]
-      },
-      "properties": {
-        "description": "Тарыс",
-        "iconCaption": "Источник Тарыс",
-        "marker-color": "#1e98ff"
-      }
-    },
-    {
-      "type": "Feature",
-      "id": 73,
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          93.033124,
-          51.565894
-        ]
-      },
-      "properties": {
-        "description": "Республика Тыва, Улуг-Хемский кожуун, гора Хайыракан",
-        "marker-color": "#1e98ff"
-      }
-    },
-    {
-      "type": "Feature",
-      "id": 74,
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          98.228495,
-          52.751121
-        ]
-      },
-      "properties": {
-        "description": "Республика Тыва, Тоджинский кожуун, озеро Чойган-Холь",
-        "marker-color": "#1e98ff"
-      }
-    },
-    {
-      "type": "Feature",
-      "id": 75,
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          98.789394,
-          52.890425
-        ]
-      },
-      "properties": {
-        "description": "Республика Тыва, Тоджинский кожуун, озеро Ноган-Холь",
-        "marker-color": "#1e98ff"
-      }
-    },
-    {
-      "type": "Feature",
-      "id": 76,
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          95.082163,
-          50.06466
-        ]
-      },
-      "properties": {
-        "description": "озеро Торе-Холь",
-        "marker-color": "#1e98ff"
-      }
-    },
-    {
-      "type": "Feature",
-      "id": 77,
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          97.313129,
-          52.546713
-        ]
-      },
-      "properties": {
-        "description": "Республика Тыва, Тоджинский кожуун, река Азас",
-        "marker-color": "#1e98ff"
-      }
-    },
-    {
-      "type": "Feature",
-      "id": 78,
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          91.542407,
-          50.692665
-        ]
-      },
-      "properties": {
-        "description": "Ключ, ручей; </br>\nРеспублика Тыва, Овюрский кожуун",
-        "iconCaption": "минеральный источник Ангырактыг",
-        "marker-color": "#1e98ff"
-      }
-    },
-    {
-      "type": "Feature",
-      "id": 79,
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          90.210856,
-          50.875697
-        ]
-      },
-      "properties": {
-        "description": "Ключ, ручей; </br>\nРеспублика Тыва, Бай-Тайгинский кожуун",
-        "iconCaption": "минеральный источник Дыттыг-Доргун",
-        "marker-color": "#1e98ff"
-      }
-    },
-    {
-      "type": "Feature",
-      "id": 80,
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          92.103314,
-          51.769463
-        ]
-      },
-      "properties": {
-        "description": "Ажыг-Суг",
-        "iconCaption": "минеральный источник Ажыг-Суг",
-        "marker-color": "#1e98ff"
-      }
-    },
-    {
-      "type": "Feature",
-      "id": 81,
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          91.881408,
-          51.36543
-        ]
-      },
-      "properties": {
-        "description": "Ключ, ручей; </br>\nРеспублика Тыва, Дзун-Хемчикский кожуун",
-        "iconCaption": "минеральный источник Кегээн-Булак",
-        "marker-color": "#1e98ff"
-      }
-    },
-    {
-      "type": "Feature",
-      "id": 82,
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          91.900169,
-          51.153348
-        ]
-      },
-      "properties": {
-        "description": "Республика Тыва, Дзун-Хемчикский кожуун, местечко Кара-Адыр",
-        "marker-color": "#1e98ff"
-      }
-    },
-    {
-      "type": "Feature",
-      "id": 83,
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          92.019592,
-          50.77434
-        ]
-      },
-      "properties": {
-        "description": "Ключ, ручей; </br>\nРеспублика Тыва, Овюрский кожуун",
-        "iconCaption": "минеральный источник Талдыг-Чарык",
-        "marker-color": "#1e98ff"
-      }
-    },
-    {
-      "type": "Feature",
-      "id": 84,
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          93.165088,
-          51.510556
-        ]
-      },
-      "properties": {
-        "description": "Ключ, ручей; </br>\nРеспублика Тыва, Улуг-Хемский кожуун",
-        "iconCaption": "минеральный источник Сенек",
-        "marker-color": "#1e98ff"
-      }
-    },
-    {
-      "type": "Feature",
-      "id": 85,
-      "geometry": {
-        "coordinates": [
-          90.446183,
-          50.706393
-        ],
-        "type": "Point"
-      },
-      "properties": {
-        "description": "Республика Тыва, Бай-Тайгинский кожуун, река Чинге-Кат",
-        "marker-color": "#1e98ff"
-      }
-    },
-    {
-      "type": "Feature",
-      "id": 86,
-      "geometry": {
-        "coordinates": [
-          96.161866,
-          51.532727
-        ],
-        "type": "Point"
-      },
-      "properties": {
-        "description": "Республика Тыва, Каа-Хемский кожуун, река Кужурлуг-Ой",
-        "marker-color": "#1e98ff"
-      }
-    },
-    {
-      "type": "Feature",
-      "id": 87,
-      "geometry": {
-        "coordinates": [
-          90.208444,
-          50.875988
-        ],
-        "type": "Point"
-      },
-      "properties": {
-        "description": "Республика Тыва, Барун-Хемчикский кожуун, местечко Чангыс-Терек",
-        "marker-color": "#1e98ff"
-      }
-    },
-    {
-      "type": "Feature",
-      "id": 88,
-      "geometry": {
-        "coordinates": [
-          92.108461,
-          51.6268
-        ],
-        "type": "Point"
-      },
-      "properties": {
-        "description": "Республика Тыва, Чаа-Хольский кожуун, урочище Суглуг-Ой",
-        "marker-color": "#1e98ff"
+        "description": "Улаатай",
+        "fill": "#ed4543",
+        "fill-opacity": 0.6,
+        "stroke": "#ed4543",
+        "stroke-width": "5",
+        "stroke-opacity": 0.9
       }
     }
   ]

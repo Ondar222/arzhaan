@@ -1,4 +1,4 @@
-import Map from 'components/Map'
+import Map from '@/components/Map'
 import Head from 'next/head'
 
 const Home = () => {
