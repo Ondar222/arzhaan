@@ -16,13 +16,15 @@
   top: 0;
   right: 0;
   padding: 20px;
-  color: white;
-  font-size: 30px;
+  color: rgba(250, 39, 39, 0.616);
+  font-size: 25px;
+  right: 10px;
 
+  
   z-index: 700;
 }
 
-.modal__fade {
+.modal__fade { 
   position: fixed;
   top: 0;
   left: 0;
@@ -31,7 +33,7 @@
 
   background: rgba(53, 53, 53, 0.363);
 
-  z-index: 500;
+  z-index: 499;
 }
 
 .modal__container {
@@ -49,26 +51,31 @@
   gap: 20px;
   display: flex;
   flex-direction: column;
+
+  z-index: 600;
 }
 .modal__info__header {
   width: 100%;
+  padding: 0px 10px;
+
   background: white;
   color: black;
   font-size: 20px;
 }
 
 .modal__info__body {
+  padding: 0px 10px;
   width: 100%;
   height: 50%;
   background: white;
   color: black;
   font-size: 20px;
-
 }
 
 .modal__info__footer {
   width: 100%;
   height: 20%;
+
 }
 
 .contacts {
@@ -79,12 +86,24 @@
   font-size: 17px;
   border: 0px white solid;
   background: none;
-  border-radius: 10px;
+  border-radius: 20px;
   border-color: white;
   padding: 10px 20px;
   box-shadow: 0 0 10px 10px white;
 }
-.modal__list{
+.link__website {
+  width: 150px;
+  font-size: 17px;
+  font-weight: 400;
+  text-align: center;
+  border: 1px white solid;
+  border-radius: 5px;
+  padding: 5px 10px;
+  color: white;
+  background-color: white;
+  text-decoration: none;
+}
+.modal__list {
   display: flex;
   flex-direction: row;
   grid-gap: 10px;
@@ -92,14 +111,12 @@
   flex-wrap: wrap;
   width: 100%;
   padding: 10px 0;
-  border-radius: 10px;
 }
 
 .item__list {
-  background: red;
-  border: 2px white solid;
-  border-radius: 5px;
+  background: rgb(235, 160, 160);
+  border: 5px white solid;
+  border-radius: 20px;
   padding: 10px;
+  list-style-type: none;
 }
-
-

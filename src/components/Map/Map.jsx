@@ -12,6 +12,9 @@ const Map = () => {
       <Modal
       title="Название"
       body="Деятельность"
+      email="arzhaan@gmail.com"
+      address="с.Пий-Хем"
+      phone="+79967765636"
       
       />
     
