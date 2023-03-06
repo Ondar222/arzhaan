@@ -1,0 +1,27 @@
+.footer{
+  position: relative;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  background: #282c34;
+  color: aliceblue;
+}
+
+.container{
+  max-width: 1240px;
+  display: flex;
+}
+
+
+.footer__name{
+  width: 80%;
+  display: flex;
+  justify-content: space-between; 
+  padding: 20px 20px;
+}
+
+.footer__info{
+  display: block;
+  padding: 20px 20px;
+}

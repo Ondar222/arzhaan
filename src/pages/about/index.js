@@ -1,9 +1,12 @@
 const About = () => {
 
     return (
-      <div>asd</div>
+      <div className="Header">
+        <h1>Заголовок</h1>
+      </div>
     )
 }
+
 
 
 export default About

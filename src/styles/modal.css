@@ -51,8 +51,19 @@
   gap: 20px;
   display: flex;
   flex-direction: column;
+  scroll-behavior: unset;
 
   z-index: 600;
+}
+
+.modal__contacts{
+  padding: 20px 20px;
+  border-width: 1px;
+	border-style: ridge;
+	border-color: white;
+	width: 50%;
+	height: 100%;
+  
 }
 .modal__info__header {
   width: 100%;
@@ -66,15 +77,17 @@
 .modal__info__body {
   padding: 0px 10px;
   width: 100%;
-  height: 50%;
   background: white;
   color: black;
-  font-size: 20px;
+  position: relative;
+  scroll-behavior: auto;
 }
 
 .modal__info__footer {
+ 
   width: 100%;
   height: 20%;
+
 
 }
 
@@ -106,8 +119,7 @@
 .modal__list {
   display: flex;
   flex-direction: row;
-  grid-gap: 10px;
-  gap: 50px;
+
   flex-wrap: wrap;
   width: 100%;
   padding: 10px 0;
@@ -115,8 +127,20 @@
 
 .item__list {
   background: rgb(235, 160, 160);
-  border: 5px white solid;
+  border: 15px white solid;
   border-radius: 20px;
   padding: 10px;
   list-style-type: none;
+}
+
+.btn{
+ position: fixed;
+ z-index: 700;
+ background: red;
+ display: flex;
+ right: 0;
+ margin: 0px 30px;
+ cursor: pointer;
+ width: 100px;
+ height: 50px;
 }

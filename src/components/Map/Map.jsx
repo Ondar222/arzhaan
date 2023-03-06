@@ -4,7 +4,7 @@ import Modal from '@/components/Modal'
 
 const Map = () => {
   return (
-    <MapContainer center={[51.505, 94]} zoom={13} scrollWheelZoom={true} style={{ width: "100vw", height: "100vh" }}>
+    <MapContainer center={[51.505, 94]} zoom={13} scrollWheelZoom={true} style={{ width: "100vw", height: "80vh", }}>
       <TileLayer
         attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
