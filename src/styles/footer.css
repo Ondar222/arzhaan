@@ -1,5 +1,6 @@
 .footer{
   position: relative;
+  height: 200px;
   left: 0;
   right: 0;
   bottom: 0;
@@ -11,6 +12,7 @@
 .container{
   max-width: 1240px;
   display: flex;
+  overflow-y: hidden;
 }
 
 
@@ -22,6 +24,25 @@
 }
 
 .footer__info{
+  position: absolute;
   display: block;
+  flex-direction: column;
   padding: 20px 20px;
+  width: 300px;
+  left: 0;
+  top: 3em;
+
+}
+
+.cit{
+  position: relative;
+  width: 250px;
+  height: 100%;
+  display: flex;
+  margin: 20px 20px;
+  padding: 20px 20px;
+  flex-direction: column;
+  border-style: ridge;
+	border-color: white;
+ 
 }
