@@ -6,17 +6,18 @@
 
   width: 60%;
 
-  background: rgb(53, 53, 53);
-  overflow-y: scroll;
+  background: #282c34;
   z-index: 500;
 }
-
+.modal__info__deyatelnost{
+  font-size: 25px;
+}
 .modal__close {
   position: absolute;
   top: 0;
   right: 0;
   padding: 20px;
-  color: rgba(250, 39, 39, 0.616);
+  color: #282c34;
   font-size: 25px;
   right: 10px;
 
@@ -31,7 +32,7 @@
   bottom: 0;
   right: 0;
 
-  background: rgba(53, 53, 53, 0.363);
+  background: #282c34;
 
   z-index: 499;
 }
@@ -39,7 +40,7 @@
 .modal__container {
   width: 100%;
   height: 100%;
-  background: rgba(68, 65, 65, 0.301);
+  background: #282c34;
   padding: 20px 20px;
   position: absolute;
   top: 0;
@@ -74,7 +75,7 @@
 
   background: white;
   color: black;
-  font-size: 20px;
+  font-size: 25px;
 }
 
 .modal__info__body {
