@@ -8,8 +8,11 @@ const Header = () => {
     const dispatch = useAppDispatch()
 
     return (
+
         <div className="header">
+ 
             <div className="container">
+
                 <div className="form">
                     <form className="search__form">
                         <input
@@ -21,16 +24,15 @@ const Header = () => {
                 </div>
                 <div className="button__container__search">
                     <input onClick={() => dispatch(setIsModal())}
-                    type="button"
-                     value="&#128270;"
-                     className="btn__search"/>
-                        
+                        type="button"
+                        value="&#128270;"
+                        className="btn__search" />
+
                 </div>
 
                 <div className="header__name">
                     <h1 className="header__website__name">Аржааны Тувы</h1>
-                    <div className="header__filter__open__close"onClick={() => dispatch(setIsModal())}>
-
+                    <div className="header__filter__open__close" onClick={() => dispatch(setIsModal())}>
                         <svg stroke="currentColor"
                             fill="currentColor"
                             strokeWidth="0"
