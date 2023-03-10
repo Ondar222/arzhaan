@@ -13,17 +13,17 @@ const Map = () => {
 
   return (
 
-    <MapContainer 
+    <MapContainer
       center={[51.505, 94]}
       zoom={13}
       scrollWheelZoom={true}
-      style={{ width: "77vw", height: "80vh", margin: "auto"}}>
+      style={{ width: "77vw", height: "80vh", margin: "auto" }}>
       <TileLayers
         attribution='&copy;
          <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
       />
-      
+
 
       <Modal
         title="Название"
@@ -33,15 +33,15 @@ const Map = () => {
         phone="+79967765636"
 
       />
- 
-     
 
 
       {
         arzhaan.features.map((item, index) => {
           console.log(item.geometry.coordinates)
           return (<Polygon
+            color='red'
             key={index}
+
             positions={item.geometry.coordinates[0]}
 
             eventHandlers={{

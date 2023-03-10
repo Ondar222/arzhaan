@@ -10,10 +10,11 @@ const Header = () => {
     return (
 
         <div className="header">
- 
+
             <div className="container">
 
                 <div className="form">
+
                     <form className="search__form">
                         <input
                             type="text"
@@ -31,7 +32,9 @@ const Header = () => {
                 </div>
 
                 <div className="header__name">
-                    <h1 className="header__website__name">Аржааны Тувы</h1>
+                    <img src="https://zolord.ru/kartinki4/2019-07-22-15-32.jpg" style={{position: "absolute", objectFit: "fill", width: "5%", borderRadius: "25%", borderStyle: "solid"}} ></img>
+                    <h1 className="header__website__name" style={{paddingLeft: "3em"}}>
+                        Аржааны Тувы</h1>
                     <div className="header__filter__open__close" onClick={() => dispatch(setIsModal())}>
                         <svg stroke="currentColor"
                             fill="currentColor"
