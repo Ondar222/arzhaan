@@ -4,12 +4,26 @@ import Modal from '@/components/Modal'
 import { useAppDispatch, useAppSelector } from '@/store'
 import { setIsModal } from '@/store/slices/mapSettings'
 import TileLayers from './TileLayers'
+import ArzhaanMarker from '../Arzhaans/ArzhaanMarker/ArzhaanMarker'
+
+
 
 
 const Map = () => {
 
   const settings = useAppSelector((state) => state.mapSettings)
   const dispatch = useAppDispatch()
+  
+  
+  navigator.geolocation.getCurrentPosition(position => {
+    console.log(position)
+  }, error => {
+    console.error(error)
+  }, {
+    timeout: 1000,
+    maximumAge: 10000,
+    enableHighAccuracy: true
+  })
 
   return (
 
@@ -17,22 +31,38 @@ const Map = () => {
       center={[51.505, 94]}
       zoom={13}
       scrollWheelZoom={true}
-      style={{ width: "77vw", height: "80vh", margin: "auto" }}>
+      style={{ width: "77vw", height: "80vh", margin: "auto", cursor: "crosshair" }
+    }
+  
+      
+      
+    >
       <TileLayers
         attribution='&copy;
          <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
       />
-
+      
+    
 
       <Modal
         title="Название"
-        body="Деятельность"
+    
         email="arzhaan@gmail.com"
         address="с.Пий-Хем"
         phone="+79967765636"
 
       />
+
+
+      {
+        arzhaan.features.map((item, index) =>
+          <ArzhaanMarker key={index} index={index}
+            data={item}
+          >
+          </ArzhaanMarker>
+        )
+      }
 
 
       {
@@ -53,6 +83,7 @@ const Map = () => {
         }
         )
       }
+
       <Polygon
         positions={[
           [

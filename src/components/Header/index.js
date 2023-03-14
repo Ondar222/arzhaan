@@ -32,9 +32,8 @@ const Header = () => {
                 </div>
 
                 <div className="header__name">
-                    <img src="https://zolord.ru/kartinki4/2019-07-22-15-32.jpg" style={{position: "absolute", objectFit: "fill", width: "5%", borderRadius: "25%", borderStyle: "solid"}} ></img>
-                    <h1 className="header__website__name" style={{paddingLeft: "3em"}}>
-                        Аржааны Тувы</h1>
+                   
+                    <h1 className="header__website__name" style={{}}>Аржааны Тувы</h1>
                     <div className="header__filter__open__close" onClick={() => dispatch(setIsModal())}>
                         <svg stroke="currentColor"
                             fill="currentColor"

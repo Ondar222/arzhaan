@@ -1,14 +1,53 @@
+@media (max-width: 767px) {
+  .header {
+    width: 100%;
+    display: flex !;
+    justify-content: space-between;
+    align-items: center;
+    grid-gap: 10px;
+    gap: 10px;
+    padding: 20px 20px;
+    
+  }
+  .container {
+    display: flex;
+    width: 100%;
+    
+  }
+  .form {
+    display: none;
+  }
+  .button__container__search {
+    display: none;
+  }
+  .img__arzhaan {
+    display: none;
+  }
+  .header__name{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .header__website__name {
+    color: #ffffff;
+    font-size: 23px;
+    font-weight: 500;
+    letter-spacing: 4px
+  }
+  .header__filter__open__close{
+  display: none;
+  }
+}
 
-
-
-.header{
+.header {
   position: relative;
   height: 100px;
   background: #282c34;
   color: aliceblue;
   justify-content: space-between;
 }
-.container{
+.container {
   display: flex;
   flex-direction: row;
   max-width: 80% !important;
@@ -16,53 +55,48 @@
   margin: auto;
   position: relative;
 }
-.header__name{
+.header__name {
   width: 90%;
   display: flex;
-  justify-content: space-between; 
+  justify-content: space-between;
   padding: 20px 20px;
   background: #282c34;
 }
-.header__website__name{
-  
+.header__website__name {
 }
 
-.header__filter__open__close{
+.header__filter__open__close {
   position: absolute;
   right: 10px;
   z-index: 499;
   cursor: pointer;
 }
 
-.form{
+.form {
   position: absolute;
   width: 300px;
   height: 45px;
   background: #282c34;
   right: 8rem;
   top: 1em;
-  
 }
 
-.search__form{
- width: 100%;
- height: 100%;
- background: #282c34;
- 
- 
+.search__form {
+  width: 100%;
+  height: 100%;
+  background: #282c34;
 }
 
-.search__input{
- width: 100%;
- background: rgb(230, 230, 231);
- height: 100%;
- border-radius: 10px;
- border-style: double;
- border-color:#282c34;
- 
+.search__input {
+  width: 100%;
+  background: rgb(230, 230, 231);
+  height: 100%;
+  border-radius: 10px;
+  border-style: double;
+  border-color: #282c34;
 }
 
-.button__container__search{
+.button__container__search {
   position: absolute;
   width: 50px;
   height: 45px;
@@ -70,11 +104,10 @@
   top: 1em;
 }
 
-.btn__search{
+.btn__search {
   width: 100%;
   height: 100%;
   border-radius: 10px;
- border-style: double;
- border-color: #282c34;
+  border-style: double;
+  border-color: #282c34;
 }
-
