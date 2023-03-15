@@ -4,13 +4,15 @@ import {Marker, Popup} from "react-leaflet";
 import L from "leaflet";
 
 const ArzhaanMarker = (params) => {
+  
+
     // const cardSettings = useSelector(state => state.cardSettings)
     const weeklyForecast = useSelector(state => state.weeklyForecast)
     const [isPopupOpen, setIsPopupOpen] = useState(false)
     const dispatch = useDispatch()
 
     useEffect(() => {
-      console.log(params)
+      // console.log(params)
     }, [])
 
     const factory = new L.divIcon({

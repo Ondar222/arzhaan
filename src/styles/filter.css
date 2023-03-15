@@ -1,0 +1,17 @@
+.filter {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+
+  width: 30%;
+  background: #282c34;
+  z-index: 500;
+}
+
+.list__modal{
+  text-align: center;
+  font-size: 15px;
+  font-weight: 700;
+  color: aliceblue;
+}

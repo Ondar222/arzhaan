@@ -1,9 +1,11 @@
 import { useAppDispatch, useAppSelector } from "@/store";
+import { filterData, setFilterOpen, setQuery } from "@/store/slices/filterSettings";
 import { setIsModal } from "@/store/slices/mapSettings";
 import React, { useState } from "react";
 
 
 const Header = () => {
+    const filterSettings = useAppSelector((state) => state.filterSettings)
     const settings = useAppSelector((state) => state.mapSettings)
     const dispatch = useAppDispatch()
 
@@ -20,11 +22,18 @@ const Header = () => {
                             type="text"
                             placeholder="Поиск Аржаанов"
                             className="search__input"
+                            value={filterSettings.query}
+                            onFocus={() => { }}
+                            onBlur={() => dispatch(setFilterOpen(false))}
+                            onChange={(e) => { dispatch(setQuery(e.target.value)) }}
                         />
                     </form>
                 </div>
                 <div className="button__container__search">
-                    <input onClick={() => dispatch(setIsModal())}
+                    <input
+                        onClick={() => {
+                            dispatch(filterData())
+                            dispatch(setFilterOpen(true))}}
                         type="button"
                         value="&#128270;"
                         className="btn__search" />
@@ -32,26 +41,18 @@ const Header = () => {
                 </div>
 
                 <div className="header__name">
-                   
-                    <h1 className="header__website__name" style={{}}>Аржааны Тувы</h1>
-                    <div className="header__filter__open__close" onClick={() => dispatch(setIsModal())}>
-                        <svg stroke="currentColor"
-                            fill="currentColor"
-                            strokeWidth="0"
-                            viewBox="0 0 512 512"
-                            className="header__filter__open__close"
-                            height="40" width="40" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M32 96v64h448V96H32zm0 128v64h448v-64H32zm0 128v64h448v-64H32z"></path>
-                        </svg>
-                    </div>
+
+                    <h1 className="header__website__name" style={{ fontWeight: "500" }}>Аржааны Тувы</h1>
 
 
                 </div>
+
+
             </div>
-
-
-
         </div>
+
+
+
     )
 
 }

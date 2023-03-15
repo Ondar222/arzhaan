@@ -6,7 +6,7 @@ const Modal = (params) => {
   const settings = useAppSelector((state) => state.mapSettings)
   const dispatch = useAppDispatch()
   useEffect(() => {
-    console.log(settings)
+    // console.log(settings)
   }, [])
   return (
     <>

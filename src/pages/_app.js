@@ -3,6 +3,7 @@ import '@/styles/modal.css'
 import '@/styles/header.css'
 import '@/styles/footer.css'
 import '@/styles/map.css'
+import '@/styles/filter.css'
 import { Provider } from 'react-redux'
 import { wrapper } from '@/store'
 
