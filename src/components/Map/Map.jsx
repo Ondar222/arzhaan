@@ -28,7 +28,7 @@ const Map = () => {
       center={[51.505, 94]}
       zoom={13}
       scrollWheelZoom={true}
-      style={{ width: "77vw", height: "80vh", margin: "auto", cursor: "crosshair" }}
+      style={{ width: "77vw", height: "80vh", margin: "auto", cursor: "crosshair"}}
       zoomControl={false}
       layersControl={false}
       attributionControl={false}

@@ -11,7 +11,7 @@ const Filter = () => {
   return (
 
     <div className="filter" >
-      <button className="remove-button" onClick={() => {
+      <button className="close-button" onClick={() => {
         dispatch(setFilterOpen(false))
       }} style={{ float: "right" }}>X</button>
 
