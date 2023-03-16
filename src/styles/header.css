@@ -1,24 +1,24 @@
 @media (max-width: 767px) {
   .header {
     width: 100%;
-    display: flex !;
-    justify-content: space-between;
-    align-items: center;
-    grid-gap: 10px;
-    gap: 10px;
+    display: flex;
+    justify-content: space-between;     
     padding: 20px 20px;
     
   }
   .container {
-    display: flex;
-    width: 100%;
+    
     
   }
   .form {
-    display: none;
+   width: 50% !important;
+   max-height: 50%;
+   
   }
   .button__container__search {
-    display: none;
+   width: 20% !important;
+   height: 50% !important;
+   
   }
   .img__arzhaan {
     display: none;
@@ -33,7 +33,7 @@
     color: #ffffff;
     font-size: 23px;
     font-weight: 500;
-    letter-spacing: 4px
+    letter-spacing: 4px;
   }
   .header__filter__open__close{
   display: none;
