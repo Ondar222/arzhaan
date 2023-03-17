@@ -3,8 +3,8 @@ const Footer = (params) => {
   return (
     
     <div className="footer">
+       
       <div className="container">
-        <h1 className="footer__name" style={{fontWeight: "500"}}>Аржааны Тувы</h1>
       <div className="footer__info" >
         <p>Почтовый адрес 667000, Республика Тыва, г. Кызыл, ул. Ленина д. 39</p>
         <p>Телефон/факс: 8(39422)-5-62-27 email: gu_ioko@mail.ru</p>

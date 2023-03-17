@@ -1,3 +1,9 @@
+@media (max-width: 767px) {
+  .filter {
+  
+  }
+}
+
 .filter {
   position: absolute;
   top: 0;

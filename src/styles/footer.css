@@ -16,7 +16,7 @@
   }
 
   .footer__info {
-    display: none !important;
+    padding: 0px 0px !important;
   }
   .footer__name {
     display: flex;
@@ -26,8 +26,8 @@
     font-weight: 500;
   }
   .cit {
-   
-   display: none !important;
+   width: 100% !important;
+   margin: 0px 0px !important;  
   }
 }
 
@@ -46,20 +46,17 @@
 .container {
   max-width: 1240px;
   display: flex;
-  overflow-y: hidden;
+  justify-content: space-between;
+ 
 }
 
 .footer__name {
   width: 80%;
   display: flex;
-  justify-content: space-between;
-  padding: 20px 20px;
+
 }
 
 .footer__info {
-  position: absolute !important;
-  display: block;
-  flex-direction: column;
   padding: 20px 20px;
   width: 300px;
   left: 0;
@@ -67,13 +64,13 @@
 }
 
 .cit {
-  position: relative;
+ 
   width: 250px;
   height: 100%;
   display: flex;
   margin: 20px 20px;
   padding: 20px 20px;
-  flex-direction: column;
+ 
   border-style: ridge;
   border-color: white;
 }
