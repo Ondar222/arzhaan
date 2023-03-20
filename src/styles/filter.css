@@ -2,6 +2,10 @@
   .filter {
   
   }
+  #list__modal{
+   font-weight: 500 !important;
+   font-style: italic;
+  }
 }
 
 .filter {

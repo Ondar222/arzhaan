@@ -7,6 +7,9 @@ import TileLayers from './TileLayers'
 import ArzhaanMarker from '@/components/Arzhaans/ArzhaanMarker/ArzhaanMarker'
 import Filter from '@/components/Filter'
 
+
+
+
 const Map = () => {
   const filter = useAppSelector((state) => state.filterSettings)
   const settings = useAppSelector((state) => state.mapSettings)
@@ -22,22 +25,28 @@ const Map = () => {
     enableHighAccuracy: true
   })
 
+
+
   return (
 
     <MapContainer
       center={[51.505, 94]}
       zoom={13}
       scrollWheelZoom={true}
-      style={{ width: "77vw", height: "80vh", margin: "auto", cursor: "crosshair"}}
+      style={{ width: "77vw", height: "80vh", margin: "auto", cursor: "crosshair" }}
       zoomControl={false}
       layersControl={false}
       attributionControl={false}
+      
     >
+  
       {/* <TileLayers
         attribution='&copy;
          <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
       /> */}
+
+ 
       <TileLayer
         attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
@@ -72,7 +81,7 @@ const Map = () => {
             key={index}
 
             positions={item.geometry.coordinates[0]}
-            
+
             eventHandlers={{
               click: () => {
                 dispatch(setIsModal())

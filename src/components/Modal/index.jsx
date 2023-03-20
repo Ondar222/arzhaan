@@ -2,6 +2,7 @@ import { setIsModal } from "@/store/slices/mapSettings";
 import React, { useEffect, useState } from "react";
 import { useAppDispatch, useAppSelector } from "@/store";
 
+
 const Modal = (params) => {
   const settings = useAppSelector((state) => state.mapSettings)
   const dispatch = useAppDispatch()
@@ -40,6 +41,7 @@ const Modal = (params) => {
                       Население республики широко использует холодные аржааны Шивилиг, Уургайлыг, Когээн-Булак, Хемчик, Кара-Суг, Торгалыг, Улаатай, Маннайлыг и др. Для лечебных целей используется значительная часть степных озер с соленой водой: Дус-Холь, Чедер, Бай-Холь.
                        Минеральные источники, озера Тывы имеют уникальные свойства и находятся в особых природно-климатических условиях, в живописных местах Тувы.
                     </p>
+                
                   </div>
 
                 </div>
