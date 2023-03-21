@@ -2,12 +2,27 @@ import Footer from '@/components/Footer'
 import Header from '@/components/Header'
 import Map from '@/components/Map'
 import Head from 'next/head'
+import { useEffect } from 'react'
 
+export const getServerSideProps = async () => {
+  const about = await fetch(`${process.env.backend}/api/features?populate=*`)
+    .then((res) => res.json())
+    .then((res) => res.data)
 
-const Home = () => {
+  return {
+    props: {
+      about: about
+    }
+  }
+}
+
+const Home = ({ about }) => {
+  useEffect(() => {
+    console.log(about)
+  }, [])
   return (
     <>
-    <Header />
+      <Header />
 
       <Head>
         <title>Create Next App</title>
@@ -16,7 +31,7 @@ const Home = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Map/>
+      <Map arzhaans={about}/>
       <Footer />
     </>
   )

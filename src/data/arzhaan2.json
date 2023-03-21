@@ -43,6 +43,7 @@
         "description": "Борзу-Холь",
         "fill": "#ed4543",
         "fill-opacity": 0.6,
+        "info": "",
         "stroke": "#ed4543",
         "stroke-width": "5",
         "stroke-opacity": 0.9

@@ -8,9 +8,7 @@ import ArzhaanMarker from '@/components/Arzhaans/ArzhaanMarker/ArzhaanMarker'
 import Filter from '@/components/Filter'
 
 
-
-
-const Map = () => {
+const Map = (params) => {
   const filter = useAppSelector((state) => state.filterSettings)
   const settings = useAppSelector((state) => state.mapSettings)
   const dispatch = useAppDispatch()
@@ -37,16 +35,16 @@ const Map = () => {
       zoomControl={false}
       layersControl={false}
       attributionControl={false}
-      
+
     >
-  
+
       {/* <TileLayers
         attribution='&copy;
          <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
       /> */}
 
- 
+
       <TileLayer
         attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
@@ -59,6 +57,7 @@ const Map = () => {
         email="arzhaan@gmail.com"
         address="с.Пий-Хем"
         phone="+79967765636"
+        info= "<Polygon />"
       />
 
       {filter.isFilterOpen && <Filter />}
@@ -75,6 +74,27 @@ const Map = () => {
 
 
       {
+        params.arzhaans.map((item, index) => {
+          console.log('arzhaan #'+item.id)
+          console.log(item)
+          return (
+          <Polygon
+            color='red'
+            key={index}
+
+            positions={item.attributes.geometry.coordinates[0]}
+
+            eventHandlers={{
+              click: () => {
+
+                dispatch(setIsModal() )
+              }
+            }}
+          />)
+        })
+      }
+
+      {/* {
         arzhaan.features.map((item, index) => {
           return (<Polygon
             color='red'
@@ -90,7 +110,7 @@ const Map = () => {
           />)
         }
         )
-      }
+      } */}
 
       <Polygon
         positions={[
