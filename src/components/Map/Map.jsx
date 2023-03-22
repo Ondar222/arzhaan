@@ -6,7 +6,17 @@ import { setIsModal } from '@/store/slices/mapSettings'
 import TileLayers from './TileLayers'
 import ArzhaanMarker from '@/components/Arzhaans/ArzhaanMarker/ArzhaanMarker'
 import Filter from '@/components/Filter'
+import { useEffect, useState } from 'react'
+import parser from 'html-react-parser'
 
+export const getServerSideProps = async (context) => {
+  const { id } = context.params
+  const res = await fetch(`${process.env.APIpath}/api/features/${id}?populate=*`)
+  const arzhaan = await res.json()
+  return {
+    props: { person: arzhaan.data }
+  }
+}
 
 const Map = (params) => {
   const filter = useAppSelector((state) => state.filterSettings)
@@ -23,7 +33,13 @@ const Map = (params) => {
     enableHighAccuracy: true
   })
 
-
+  const [title, setTitle] = useState()
+  const [brief, setBrief] = useState()
+  const [medicinal_properties, setmedicinal_properties] = useState()
+  const [photo_materials, setphoto_materials] = useState()
+  const [email, setemail] = useState()
+  const [address, setaddress] = useState()
+  const [phone, setphone] = useState()
 
   return (
 
@@ -50,15 +66,17 @@ const Map = (params) => {
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
       <ZoomControl position='bottomright' />
       {/* <LayersControl position='topright' /> */}
-
       <Modal
-        title="Название"
-
-        email="arzhaan@gmail.com"
-        address="с.Пий-Хем"
-        phone="+79967765636"
-        info= "<Polygon />"
+        address={parser(String(address))}
+        phone={parser(String(phone))}
+        title={title}
+        brief={parser(String(brief))}
+        medicinal_properties={parser(String(medicinal_properties))}
+        photo_materials={parser(String(photo_materials))}
+        email={parser(String(email))}
       />
+
+
 
       {filter.isFilterOpen && <Filter />}
 
@@ -75,22 +93,27 @@ const Map = (params) => {
 
       {
         params.arzhaans.map((item, index) => {
-          console.log('arzhaan #'+item.id)
-          console.log(item)
           return (
-          <Polygon
-            color='red'
-            key={index}
+            <Polygon
+              color='red'
+              key={index}
 
-            positions={item.attributes.geometry.coordinates[0]}
+              positions={item.attributes.geometry.coordinates[0]}
 
-            eventHandlers={{
-              click: () => {
+              eventHandlers={{
+                click: () => {
+                  setTitle(item.attributes.properties.description)
+                  setBrief(item.attributes.properties.brief)
+                  setmedicinal_properties(item.attributes.properties.medicinal_properties)
+                  setphoto_materials(item.attributes.properties.photo_materials)
+                  setemail(item.attributes.properties.email)
+                  setaddress(item.attributes.properties.address)
+                  setphone(item.attributes.properties.phone)
 
-                dispatch(setIsModal() )
-              }
-            }}
-          />)
+                  dispatch(setIsModal())
+                }
+              }}
+            />)
         })
       }
 

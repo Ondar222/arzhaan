@@ -2,6 +2,7 @@ import { setIsModal } from "@/store/slices/mapSettings";
 import React, { useEffect, useState } from "react";
 import { useAppDispatch, useAppSelector } from "@/store";
 
+
 const Modal = (params) => {
   const settings = useAppSelector((state) => state.mapSettings)
   const dispatch = useAppDispatch()
@@ -34,17 +35,19 @@ const Modal = (params) => {
                   </div>
                   <div>
                     <p>
-                      Республика Тыва расположена в центре Азии, на юге Восточной Сибири, в верховьях Енисея.
-                      Это уникальное по своей истории, природе и культуре место.
-
-                      Наиболее крупные из них — горячие источники Уш-Белдир (Северный аржаан) и Тарыс (Южный аржаан) в горах восточной Тывы на хребте Академика Обручева с температурой воды от +52...+85 °С.
-                      Население республики широко использует холодные аржааны Шивилиг, Уургайлыг, Когээн-Булак, Хемчик, Кара-Суг, Торгалыг, Улаатай, Маннайлыг и др. Для лечебных целей используется значительная часть степных озер с соленой водой: Дус-Холь, Чедер, Бай-Холь.
-                      Минеральные источники, озера Тывы имеют уникальные свойства и находятся в особых природно-климатических условиях, в живописных местах Тувы.
-                    </p>
+                    {params.location}
+                    </p>                  
+                  </div>
+                  <div>
                     <p>
-                      {params.info}
+                    {params.brief}
                     </p>
-
+                  </div>
+                  <div>
+                    {params.medicinal_properties}
+                  </div>
+                  <div>
+                  {params.photo_materials}
                   </div>
 
                 </div>

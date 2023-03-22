@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@reduxjs/toolkit": "^1.9.3",
+    "html-react-parser": "^3.0.13",
     "leaflet": "^1.9.3",
     "next": "13.2.1",
     "next-redux-wrapper": "^8.1.0",

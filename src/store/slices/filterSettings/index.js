@@ -26,6 +26,9 @@ const filterSettingsSlice = createSlice({
         }
       })
     }
+  },
+  extraReducers: {
+    
   }
 })
 
