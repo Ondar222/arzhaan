@@ -21,7 +21,6 @@ const selectedArzhaanSlice = createSlice({
   initialState,
   extraReducers: {
     [getSelectedArzhaan.fulfilled]: (state, action) => {
-      console.log(action.payload)
       state.data = action.payload
     }
   }
