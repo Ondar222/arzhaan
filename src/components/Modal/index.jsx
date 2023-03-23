@@ -15,8 +15,8 @@ const Modal = (params) => {
       {
         settings.isModalOpen === true && (
           
-            <div className="modal__okno">
           <div className="modal">
+            <div className="modal__okno">
             <div className="modal__close" onClick={() => dispatch(setIsModal())}>X</div>
 
             <div className="modal__container">
@@ -27,9 +27,7 @@ const Modal = (params) => {
               </div>
               <div className="modal__info__body">
                 <div className="modal__info__deyatelnost">
-                  {
-                    params.body
-                  }
+                 
                 </div>
                 <div className="modal__list">
                   <div>
