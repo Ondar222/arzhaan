@@ -8,6 +8,7 @@ import ArzhaanMarker from '@/components/Arzhaans/ArzhaanMarker/ArzhaanMarker'
 import Filter from '@/components/Filter'
 import { useEffect, useState } from 'react'
 import parser from 'html-react-parser'
+import { getSelectedArzhaan } from '@/store/slices/selectedArzhaanSlice/service'
 
 export const getServerSideProps = async (context) => {
   const { id } = context.params
@@ -22,6 +23,9 @@ const Map = (params) => {
   const filter = useAppSelector((state) => state.filterSettings)
   const settings = useAppSelector((state) => state.mapSettings)
   const dispatch = useAppDispatch()
+
+  const [dragging, setDragging] = useState(!settings.isModalOpen)
+  const [scroll, setScroll] = useState(!settings.isModalOpen)
 
   navigator.geolocation.getCurrentPosition(position => {
     // console.log(position)
@@ -41,32 +45,15 @@ const Map = (params) => {
   const [address, setaddress] = useState()
   const [phone, setphone] = useState()
 
+  useEffect(() => {
+    settings.isModalOpen ? document.body.style.overflow = 'hidden' : document.body.style.overflow = 'unset'
+    setDragging(!settings.isModalOpen)
+    setScroll(!settings.isModalOpen)
+  }, [settings.isModalOpen])
+
   return (
-
-    <MapContainer
-      center={[51.505, 94]}
-      zoom={13}
-      scrollWheelZoom={true}
-      style={{ width: "77vw", height: "80vh", margin: "auto", cursor: "crosshair" }}
-      zoomControl={false}
-      layersControl={false}
-      attributionControl={false}
-
-    >
-
-      {/* <TileLayers
-        attribution='&copy;
-         <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-        url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-      /> */}
-
-
-      <TileLayer
-        attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
-        url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
-      <ZoomControl position='bottomright' />
-      {/* <LayersControl position='topright' /> */}
-      <Modal
+    <>
+      {settings.isModalOpen && <Modal
         address={parser(String(address))}
         phone={parser(String(phone))}
         title={title}
@@ -74,50 +61,68 @@ const Map = (params) => {
         medicinal_properties={parser(String(medicinal_properties))}
         photo_materials={parser(String(photo_materials))}
         email={parser(String(email))}
-      />
+      />}
+      <MapContainer
+        center={[51.505, 94]}
+        zoom={13}
+        scrollWheelZoom={scroll}
+        style={{ width: "77vw", height: "80vh", margin: "auto", cursor: "crosshair" }}
+        zoomControl={false}
+        layersControl={false}
+        attributionControl={false}
+        dragging={dragging}
+      >
+
+        {/* <TileLayers
+        attribution='&copy;
+         <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+        url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+      /> */}
+
+
+        <TileLayer
+          attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+          url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
+        <ZoomControl position='bottomright' />
+        {/* <LayersControl position='topright' /> */}
 
 
 
-      {filter.isFilterOpen && <Filter />}
+
+        {filter.isFilterOpen && <Filter arzhaans={params.arzhaans}/>}
 
 
-      {
-        arzhaan.features.map((item, index) =>
-          <ArzhaanMarker key={index} index={index}
-            data={item}
-          >
-          </ArzhaanMarker>
-        )
-      }
+        {
+          arzhaan.features.map((item, index) =>
+            <ArzhaanMarker key={index} index={index}
+              data={item}
+            >
+            </ArzhaanMarker>
+          )
+        }
 
 
-      {
-        params.arzhaans.map((item, index) => {
-          return (
-            <Polygon
-              color='red'
-              key={index}
+        {
+          params.arzhaans.map((item, index) => {
+            return (
+              <Polygon
+                color='red'
+                key={index}
 
-              positions={item.attributes.geometry.coordinates[0]}
+                positions={item.attributes.geometry.coordinates[0]}
 
-              eventHandlers={{
-                click: () => {
-                  setTitle(item.attributes.properties.description)
-                  setBrief(item.attributes.properties.brief)
-                  setmedicinal_properties(item.attributes.properties.medicinal_properties)
-                  setphoto_materials(item.attributes.properties.photo_materials)
-                  setemail(item.attributes.properties.email)
-                  setaddress(item.attributes.properties.address)
-                  setphone(item.attributes.properties.phone)
+                eventHandlers={{
+                  click: () => {
+                    dispatch(getSelectedArzhaan(item.id))
 
-                  dispatch(setIsModal())
-                }
-              }}
-            />)
-        })
-      }
+                    dispatch(setIsModal())
+                  }
+                }}
+              />)
+          })
+        }
 
-      {/* {
+        {/* {
         arzhaan.features.map((item, index) => {
           return (<Polygon
             color='red'
@@ -135,25 +140,27 @@ const Map = (params) => {
         )
       } */}
 
-      <Polygon
-        positions={[
-          [
-            [51.51, -0.12],
-            [51.51, -0.13],
-            [51.53, -0.13],
-          ],
-          [
-            [51.51, -0.05],
-            [51.51, -0.07],
-            [51.53, -0.07],
-          ],
-        ]}
+        <Polygon
+          positions={[
+            [
+              [51.51, -0.12],
+              [51.51, -0.13],
+              [51.53, -0.13],
+            ],
+            [
+              [51.51, -0.05],
+              [51.51, -0.07],
+              [51.53, -0.07],
+            ],
+          ]}
 
 
-      />
+        />
 
 
-    </MapContainer>
+      </MapContainer>
+    </>
+
 
   )
 }

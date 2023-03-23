@@ -8,41 +8,37 @@
     gap: 10px;
     padding: 20px 20px;
   }
-  .modal__container{
-
+  .modal__container {
   }
-  .modal__info__header{
+  .modal__info__header {
     font-size: 15px !important;
   }
-  .modal__close{
+  .modal__close {
     font-size: 16px !important;
   }
-  .modal__info__body{
-   
+  .modal__info__body {
   }
-  .modal__list{
-   font-size: 10px;
-  
+  .modal__list {
+    font-size: 10px;
   }
-  .modal__contacts{
+  .modal__contacts {
     display: none;
   }
 }
 
 .modal {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   bottom: 0;
 
-  width: 60%;
-
+  width: 100vh;
+  
   background: #282c34;
   z-index: 500;
-  overflow-y: scroll;
-  
+ 
 }
-.modal__info__deyatelnost{
+.modal__info__deyatelnost {
   font-size: 25px;
 }
 .modal__close {
@@ -54,11 +50,10 @@
   font-size: 25px;
   right: 10px;
 
-  
   z-index: 700;
 }
 
-.modal__fade { 
+.modal__fade {
   position: fixed;
   top: 0;
   left: 0;
@@ -66,7 +61,7 @@
   right: 0;
 
   background: #282c34;
-
+  opacity: 0.4;
   z-index: 499;
 }
 
@@ -79,27 +74,26 @@
   top: 0;
   left: 0;
   bottom: 0;
-
+  z-index: 500;
   color: #ffffff;
   font-size: 17px;
   gap: 20px;
   display: flex;
   flex-direction: column;
   scroll-behavior: unset;
-
+ 
 }
-.modal__footer{
+.modal__footer {
   display: flex;
   flex-direction: column;
 }
-.modal__contacts{
+.modal__contacts {
   padding: 20px 20px;
   border-width: 1px;
-	border-style: ridge;
-	border-color: white;
-	width: 50%;
-	height: 100%;
-  
+  border-style: ridge;
+  border-color: white;
+  width: 50%;
+  height: 100%;
 }
 .modal__info__header {
   width: 100%;
@@ -122,7 +116,6 @@
 .modal__info__footer {
   width: 100%;
   height: 20%;
-
 }
 
 .contacts {
@@ -167,14 +160,14 @@
   list-style-type: none;
 }
 
-.btn{
- position: fixed;
- z-index: 700;
- background: red;
- display: flex;
- right: 0;
- margin: 0px 30px;
- cursor: pointer;
- width: 100px;
- height: 50px;
+.btn {
+  position: fixed;
+  z-index: 700;
+  background: red;
+  display: flex;
+  right: 0;
+  margin: 0px 30px;
+  cursor: pointer;
+  width: 100px;
+  height: 50px;
 }

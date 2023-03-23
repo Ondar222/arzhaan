@@ -3,11 +3,13 @@ import { createWrapper } from "next-redux-wrapper";
 import { useDispatch, useSelector } from "react-redux";
 import filterSettingsSliceReducer from "./slices/filterSettings";
 import mapSettingsSliceReducer from './slices/mapSettings'
+import selectedArzhaanSliceReducer from "./slices/selectedArzhaanSlice";
 
 const store = () => configureStore({
   reducer: {
     mapSettings: mapSettingsSliceReducer,
-    filterSettings: filterSettingsSliceReducer
+    filterSettings: filterSettingsSliceReducer,
+    selectedArzhaan: selectedArzhaanSliceReducer
   }
 })
 
