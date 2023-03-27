@@ -48,6 +48,7 @@ const Header = () => {
                                 dispatch(filterData())
                                 dispatch(setFilterOpen(true))
                             }}
+                            
                             type="button"
                             value="Список Аржаанов"
                             className="btn__search" />

@@ -135,3 +135,6 @@
 .search__form{
   
 }
+.btn__search:hover{
+  color: rgb(241, 94, 94);
+}
