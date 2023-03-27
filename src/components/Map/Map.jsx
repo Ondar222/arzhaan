@@ -63,8 +63,8 @@ const Map = (params) => {
         email={parser(String(email))}
       />}
       <MapContainer
-        center={[51.505, 94]}
-        zoom={13}
+        center={[51.8, 94.15]}
+        zoom={7}
         scrollWheelZoom={scroll}
         style={{ width: "77vw", height: "80vh", margin: "auto", cursor: "crosshair" }}
         zoomControl={false}

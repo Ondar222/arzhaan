@@ -19,14 +19,16 @@ const Modal = (params) => {
         settings.isModalOpen === true && (
 
           <div className="modal">
-            <div className="modal__fade" onClick={() => dispatch(setIsModal())}></div>
+            <div className="modal__fade" onClick={() => dispatch(setIsModal())}>
+              
+            </div>
+
+            <div className="modal__container">
             <div className="modal__close" onClick={() => {
               
               dispatch(setIsModal())
             }
             }>X</div>
-
-            <div className="modal__container">
               <div className="modal__info__header">
                 {
                   parser(String(selectedArzhaan?.data?.attributes?.properties?.description))

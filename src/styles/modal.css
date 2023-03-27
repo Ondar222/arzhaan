@@ -1,6 +1,6 @@
 @media (max-width: 767px) {
   .modal {
-    width: 100%;
+    width: 80% !important;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -9,9 +9,10 @@
     padding: 20px 20px;
   }
   .modal__container {
+    overflow-y: scroll !important;
   }
   .modal__info__header {
-    font-size: 15px !important;
+    font-size: 20px !important;
   }
   .modal__close {
     font-size: 16px !important;
@@ -19,10 +20,13 @@
   .modal__info__body {
   }
   .modal__list {
-    font-size: 10px;
+    font-size: 15px;
   }
   .modal__contacts {
     display: none;
+  }
+  .modal__close {
+    position: absolute !important;
   }
 }
 
@@ -33,10 +37,9 @@
   bottom: 0;
 
   width: 100vh;
-  
+
   background: #282c34;
   z-index: 500;
- 
 }
 .modal__info__deyatelnost {
   font-size: 25px;
@@ -81,7 +84,6 @@
   display: flex;
   flex-direction: column;
   scroll-behavior: unset;
- 
 }
 .modal__footer {
   display: flex;

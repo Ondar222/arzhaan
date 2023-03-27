@@ -11,25 +11,27 @@ const Filter = (params) => {
 
   return (
 
-    <div className="filter" >
+    <div className="filter" >   
       <button className="close-button" onClick={() => {
         dispatch(setFilterOpen(false))
       }} style={{ float: "right" }}>X</button>
 
       {
         params?.arzhaans?.map(item => {
-        return <div key={item.id} className="list__modal" onClick={() => {
-          dispatch(getSelectedArzhaan(item.id))
-          dispatch(setFilterOpen(false))
-          dispatch(setQuery(""))
-          dispatch(setIsModal(true))
-        }}>
-          
-          {item.attributes.properties.description}
-          </div>})
+          return <div key={item.id} className="list__modal" onClick={() => {
+            dispatch(getSelectedArzhaan(item.id))
+            dispatch(setFilterOpen(false))
+            dispatch(setQuery(""))
+            dispatch(setIsModal(true))
+          }}>
+
+            {item.attributes.properties.description}
+          </div>
+        })
       }
 
-    </div>)
+
+      </div>)
 }
 
 export default Filter
