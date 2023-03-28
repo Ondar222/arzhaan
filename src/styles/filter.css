@@ -3,26 +3,24 @@
     width: 40% !important;
     overflow-y: scroll;
   }
-  #list__modal{
-   font-weight: 500 !important;
-   font-style: italic;
-   font-size: 10px !important;
-   
+  #list__modal {
+    font-weight: 500 !important;
+    font-style: italic;
+    font-size: 10px !important;
   }
-  .list__modal{
+  .list__modal {
     font-size: 12px !important;
   }
-  .filter__fade{
+  .filter__fade {
     position: absolute;
     top: 0;
     left: 0;
     bottom: 0;
     right: 0;
-  
+
     background: #282c34;
     opacity: 0.4;
     z-index: 499;
-    
   }
 }
 
@@ -34,8 +32,8 @@
 
   width: 30%;
   background: #282c34;
+  cursor: pointer;
   z-index: 500;
-
 }
 
 .list__modal {
@@ -45,3 +43,6 @@
   color: aliceblue;
 }
 
+.list__modal:hover {
+  color: rgb(241, 94, 94);
+}
