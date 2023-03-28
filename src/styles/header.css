@@ -70,6 +70,7 @@
   background: #282c34;
   color: aliceblue;
   justify-content: space-between;
+  cursor: pointer;
 }
 .container {
   display: flex;

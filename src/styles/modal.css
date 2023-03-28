@@ -32,6 +32,7 @@
 
 .modal {
   position: fixed;
+  cursor: pointer;
   top: 0;
   left: 0;
   bottom: 0;
@@ -55,7 +56,9 @@
 
   z-index: 700;
 }
-
+.modal__close:hover{
+  color: rgb(241, 94, 94);
+}
 .modal__fade {
   position: fixed;
   top: 0;

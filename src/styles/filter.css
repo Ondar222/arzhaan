@@ -46,3 +46,6 @@
 .list__modal:hover {
   color: rgb(241, 94, 94);
 }
+.close-button:hover{
+  color: rgb(241, 94, 94);
+}
