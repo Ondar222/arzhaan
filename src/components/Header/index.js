@@ -18,7 +18,9 @@ const Header = () => {
             <div className="container">
                 <div className="header__name" style={{ width: "100%", display: "flex", flexDirection: "column" }}>
 
-                    <h1 className="header__website__name" style={{ fontWeight: "500", width: "100%" }}>Аржааны Тувы</h1>
+                    <h1 className="header__website__name" style={{ fontWeight: "500", width: "100%" }}>
+                        <a href="#" className="Name__header">Аржааны Тувы</a>
+                    </h1>
 
 
                 </div>
