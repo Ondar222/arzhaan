@@ -3,9 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev -p 3012",
     "build": "next build",
-    "start": "next start",
+    "start": "next start -p 3012",
     "lint": "next lint"
   },
   "dependencies": {
@@ -19,6 +19,7 @@
     "react-leaflet": "^4.2.0",
     "react-native-geolocation-service": "^5.3.1",
     "react-redux": "^8.0.5",
+    "react-scroll": "^1.8.9",
     "redux": "^4.2.1"
   }
 }

@@ -71,7 +71,21 @@
     --card-rgb: 100, 100, 100;
     --card-border-rgb: 200, 200, 200;
   }
+  .body{
+    width: 100% !important;
+    max-width: 100% !important;
+    overflow-y: unset !important;
+   
+  }
+
+  .html{
+    width: 100% !important;
+    max-width: 100% !important;
+    overflow-y: unset !important;
+  
+  }
  
+
 }
 
 * {
@@ -83,6 +97,7 @@
 html,
 body {
   max-width: 100vw;
+  overflow-y: unset;
   
 }
 

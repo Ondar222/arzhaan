@@ -9,11 +9,14 @@ const Filter = (params) => {
 
   const dispatch = useAppDispatch()
 
+
   return (
 
     <div className="filter" >   
       <button className="close-button" onClick={() => {
+      
         dispatch(setFilterOpen(false))
+      
       }} style={{ float: "right" }}>X</button>
 
       {

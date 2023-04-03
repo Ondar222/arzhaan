@@ -57,7 +57,7 @@
   z-index: 700;
 }
 .modal__close:hover{
-  color: rgb(241, 94, 94);
+  color: royalblue;
 }
 .modal__fade {
   position: fixed;
@@ -158,7 +158,7 @@
 }
 
 .item__list {
-  background: rgb(235, 160, 160);
+  background: royalblue;
   border: 15px white solid;
   border-radius: 20px;
   padding: 10px;
@@ -168,7 +168,7 @@
 .btn {
   position: fixed;
   z-index: 700;
-  background: red;
+  background: royalblue;
   display: flex;
   right: 0;
   margin: 0px 30px;

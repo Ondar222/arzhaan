@@ -1,0 +1,51 @@
+@media (max-width: 767px) {
+ 
+.button-block{
+ position: absolute !important;
+ bottom: 0px !important;
+}
+
+.button-scroll{
+ display: flex !important;
+  background: red;
+  height: 50% !important;
+  width: 100% !important;
+  border: none;
+  text-align: center !important;
+  align-items: center;
+  padding: 20px 20px;
+  color: #fff;
+
+  
+}
+.eee{
+  overflow-y: visible !important;
+}
+  }
+
+
+  .button-block{
+    display: none;
+    position: absolute;
+   right: 0;
+   top: 0;
+   display: flex;
+   justify-content: end;
+   width: 20%;
+   height: 50%;
+  
+  
+  
+  }
+  
+  .button-scroll{
+    display: none;
+   
+    background: red;
+    height: 100%;
+    width: 100%;
+    border: none;
+    color: #fff;
+  
+    
+  }

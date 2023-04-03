@@ -10,6 +10,9 @@ import { useEffect, useState } from 'react'
 import parser from 'html-react-parser'
 import { getSelectedArzhaan } from '@/store/slices/selectedArzhaanSlice/service'
 
+
+
+
 export const getServerSideProps = async (context) => {
   const { id } = context.params
   const res = await fetch(`${process.env.APIpath}/api/features/${id}?populate=*`)
@@ -53,18 +56,21 @@ const Map = (params) => {
 
   return (
     <>
+
       {settings.isModalOpen && <Modal
         address={parser(String(address))}
         phone={parser(String(phone))}
         title={title}
         brief={parser(String(brief))}
-        medicinal_properties={parser(String(medicinal_properties))}
+        medicinal_properties ={parser(String(medicinal_properties))}
         photo_materials={parser(String(photo_materials))}
         email={parser(String(email))}
       />}
-      <MapContainer
+      <MapContainer className='map__qq'
         center={[51.8, 94.15]}
-        zoom={7}
+        zoom={6}
+        maxZoom={7}
+        minZoom={4}
         scrollWheelZoom={scroll}
         style={{ width: "77vw", height: "80vh", margin: "auto", cursor: "crosshair" }}
         zoomControl={false}
@@ -79,17 +85,18 @@ const Map = (params) => {
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
       /> */}
 
-
         <TileLayer
           attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
-        <ZoomControl position='bottomright' />
+        <ZoomControl
+          position='bottomright'
+        />
         {/* <LayersControl position='topright' /> */}
 
 
 
 
-        {filter.isFilterOpen && <Filter arzhaans={params.arzhaans}/>}
+        {filter.isFilterOpen && <Filter arzhaans={params.arzhaans} />}
 
 
         {
@@ -106,7 +113,7 @@ const Map = (params) => {
           params.arzhaans.map((item, index) => {
             return (
               <Polygon
-                color='red'
+                color='royalblue'
                 key={index}
 
                 positions={item.attributes.geometry.coordinates[0]}
@@ -157,7 +164,7 @@ const Map = (params) => {
 
         />
 
-
+    
       </MapContainer>
     </>
 

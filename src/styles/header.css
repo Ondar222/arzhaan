@@ -113,7 +113,7 @@
 .search__input {
 
   width: 100%;
-  background: rgb(230, 230, 231);
+  background: royalblue;
   height: 98%;
   border-radius: 10px;
   border-style: double;
@@ -141,5 +141,5 @@
   
 }
 .btn__search:hover{
-  color: rgb(241, 94, 94);
+  color: royalblue
 }

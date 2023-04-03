@@ -8,6 +8,7 @@ const Modal = (params) => {
   const selectedArzhaan = useAppSelector((state) => state.selectedArzhaan)
   const settings = useAppSelector((state) => state.mapSettings)
   const dispatch = useAppDispatch()
+  
 
   useEffect(() => {
     console.log(selectedArzhaan)

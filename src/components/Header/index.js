@@ -1,7 +1,8 @@
 import { useAppDispatch, useAppSelector } from "@/store";
 import { filterData, setFilterOpen, setQuery } from "@/store/slices/filterSettings";
 import { setIsModal } from "@/store/slices/mapSettings";
-import React, { useState} from "react";
+import React, { useState, useEffect } from "react";
+
 
 
 const Header = () => {
@@ -9,7 +10,8 @@ const Header = () => {
     const settings = useAppSelector((state) => state.mapSettings)
     const dispatch = useAppDispatch()
 
-  
+
+
 
     return (
 
@@ -25,7 +27,7 @@ const Header = () => {
 
                 </div>
                 <div style={{ width: "30%", paddingTop: "16px" }}>
-{/* 
+                    {/* 
                     <div className="form">
                         <form className="search__form">
                             <input
@@ -45,17 +47,20 @@ const Header = () => {
                     </div> */}
 
                     <div className="button__container__search">
-                        <input style={{width: "150px"}}
-                            onClick={() => {
+
+                        <input style={{ width: "150px" }}
+                            onClick={() => { 
+
                                 dispatch(filterData())
                                 dispatch(setFilterOpen(true))
+                       
                             }}
-                            
                             type="button"
                             value="Список Аржаанов"
                             className="btn__search" />
 
                     </div>
+
                 </div>
 
 

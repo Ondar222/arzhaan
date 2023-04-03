@@ -1,12 +1,13 @@
 @media (max-width: 767px) {
   .filter {
-    width: 40% !important;
+    width: 80% !important;
     overflow-y: scroll;
   }
   #list__modal {
     font-weight: 500 !important;
     font-style: italic;
     font-size: 10px !important;
+
   }
   .list__modal {
     font-size: 12px !important;
@@ -44,8 +45,8 @@
 }
 
 .list__modal:hover {
-  color: rgb(241, 94, 94);
+  color: royalblue;
 }
 .close-button:hover{
-  color: rgb(241, 94, 94);
+  color: royalblue;
 }

@@ -8,9 +8,14 @@
     grid-gap: 10px;
     gap: 10px;
     padding: 20px 20px;
+
   }
   .leaflet-container{
     width: 100% !important;
+  }
+
+  .map__qq{
+ width: 80% !important;
   }
 }
 
